@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>gps tracker with kill switch</title>
+    <meta property="og:title" content="gps tracker with kill switch" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div data-role="Header" class="header-header">
+          <nav class="header-nav">
+            <div class="header-container">
+              <div class="header-menu">
+                <img
+                  alt="image"
+                  src="https://houstoncarstereo.com/wp-content/uploads/2022/06/cropped-logo.png"
+                  class="header-image"
+                />
+                <a
+                  href="https://houstoncarstereo.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="header-link Large"
+                >
+                  Home
+                </a>
+                <a
+                  href="https://houstoncarstereo.com/about-us/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="header-link1"
+                >
+                  About
+                </a>
+                <a
+                  href="https://houstoncarstereo.com/boat-sounds-systems/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="header-link2"
+                >
+                  Boat Sounds Systems
+                </a>
+              </div>
+              <div class="header-container1">
+                <div class="header-container2">
+                  <a
+                    href="https://houstoncarstereo.com/contact-us/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="header-link3"
+                  >
+                    <div class="primary-pink-button-container">
+                      <button
+                        class="primary-pink-button-button button ButtonSmall"
+                      >
+                        <span>Contact Us</span>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div data-role="BurgerMenu" class="header-burger-menu">
+                  <svg viewBox="0 0 1024 1024" class="header-icon">
+                    <path
+                      d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div data-role="MobileMenu" class="header-mobile-menu">
+            <div class="header-top">
+              <a href="index.html" class="header-navlink Large">
+                Soft UI Design System
+              </a>
+              <div data-role="CloseMobileMenu" class="header-close-menu">
+                <svg viewBox="0 0 1024 1024" class="header-icon2">
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="header-mid">
+              <div class="header-menu1">
+                <a href="index.html" class="header-navlink1 Large">Home</a>
+                <a href="profile.html" class="header-navlink2 Large">Profile</a>
+                <a href="coming-soon.html" class="header-navlink3 Large">
+                  Coming Soon
+                </a>
+              </div>
+            </div>
+            <div class="header-bot">
+              <div class="primary-pink-button-container">
+                <button class="primary-pink-button-button button ButtonSmall">
+                  <span>buy now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-hero">
+          <div class="home-container01">
+            <div class="home-card">
+              <h1 class="home-text">
+                The Complete Guide to GPS Tracker with Kill Switch
+              </h1>
+              <h1 class="home-text01">and Factory Radio CarPlay</h1>
+              <span class="home-text02">
+                In today's tech-driven world, car owners are increasingly
+                seeking ways to enhance their vehicles with features that
+                provide security, convenience, and connectivity. Two popular
+                upgrades, GPS trackers with kill switches and factory radio
+                CarPlay, address these needs perfectly. But can these seemingly
+                disparate features coexist harmoniously within your car?
+              </span>
+              <div class="home-container02">
+                <div class="home-container03">
+                  <a
+                    href="https://houstoncarstereo.com/car-alarm-system/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="home-link"
+                  >
+                    <div class="primary-pink-button-container">
+                      <button
+                        class="primary-pink-button-button button ButtonSmall"
+                      >
+                        <span>Car Alarm Systems</span>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          alt="image"
+          src="https://i5.walmartimages.com/asr/07b1a991-fdc1-456b-bd5c-176d49fe2d8e_1.ba46b352f3a763a90864697931adb7e5.jpeg"
+          class="home-image"
+        />
+        <section class="home-features">
+          <div class="feature-card-container">
+            <img
+              alt="image"
+              src="https://houstoncarstereo.com/wp-content/uploads/2022/08/Pioneer150.1png.png"
+              class="feature-card-image"
+            />
+          </div>
+          <div class="feature-card-container">
+            <img
+              alt="image"
+              src="https://houstoncarstereo.com/wp-content/uploads/2022/08/Kenwood150.png"
+              class="feature-card-image"
+            />
+          </div>
+          <div class="feature-card-container">
+            <img
+              alt="image"
+              src="https://houstoncarstereo.com/wp-content/uploads/2022/08/Alpine150.png"
+              class="feature-card-image"
+            />
+          </div>
+        </section>
+        <section class="home-container04">
+          <div class="home-container05">
+            <h1 class="home-text03">GPS Tracker with Kill Switch</h1>
+            <span class="home-text04">
+              What it is: A GPS tracker is a device installed in your car that
+              transmits its location in real time, allowing you to monitor its
+              whereabouts through a web or mobile app. A kill switch adds
+              another layer of security by enabling remote engine
+              immobilization, deterring theft, and providing control in
+              emergencies.
+            </span>
+          </div>
+          <div class="home-container06">
+            <div class="home-container07">
+              <img
+                alt="image"
+                src="https://myfaithradio.com/wp-content/uploads/sites/3/2016/08/iStock_68106649_MEDIUM-1024x682.jpg"
+                class="home-image1"
+              />
+              <div class="home-container08">
+                <h3 class="home-text05">
+                  Why is Houston Car Stereo So Different?
+                </h3>
+                <p>
+                  <span>
+                    Since 1987, we have been providing customers from all over
+                    Texas with innovative and reliable mobile electronics in the
+                    market. During our years in business, we have excelled at
+                    offering our customers superb products like window tint in
+                    Houston, factory radio car play, and radar detectors in
+                    Houston, along with other latest products like JL audio,
+                    exterior and interior designs, radars, and security systems.
+                    Our customers also love our car stereo installation and
+                    repair services.
+                  </span>
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-testimonials">
+          <div class="home-container09">
+            <div class="home-container10">
+              <div class="home-container11">
+                <h2 class="home-text09">Our Mission And Goal</h2>
+                <p class="home-text10">
+                  Our mission at Houston Car Stereo is to provide every single
+                  customer the ultimate satisfaction from Houston’s most
+                  distinguished custom car audio company. We cordially invite
+                  you to view our collection of work and to join the thousands
+                  of happy customers we’ve catered to in our many years in
+                  business.
+                </p>
+              </div>
+            </div>
+            <img
+              alt="image"
+              src="https://www.drzimmerman.com/wp-content/uploads/2022/11/unnamed-2.jpg"
+              class="home-image2"
+            />
+            <div class="home-logos"></div>
+          </div>
+          <img
+            alt="image"
+            src="./bottom.svg"
+            class="home-bottom-wave-image"
+          />
+          <img alt="image" src="./waves-white.svg" class="home-image3" />
+          <img alt="image" src="./top.svg" class="home-top-wave-image" />
+        </section>
+        <section class="home-contaier">
+          <div class="home-container12">
+            <div class="home-container13">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M363.722 722.052l41.298-57.816-45.254-45.256-57.818 41.296c-10.722-5.994-22.204-10.774-34.266-14.192l-11.682-70.084h-64l-11.68 70.086c-12.062 3.418-23.544 8.198-34.266 14.192l-57.818-41.298-45.256 45.256 41.298 57.816c-5.994 10.72-10.774 22.206-14.192 34.266l-70.086 11.682v64l70.086 11.682c3.418 12.060 8.198 23.544 14.192 34.266l-41.298 57.816 45.254 45.256 57.818-41.296c10.722 5.994 22.204 10.774 34.266 14.192l11.682 70.084h64l11.68-70.086c12.062-3.418 23.544-8.198 34.266-14.192l57.818 41.296 45.254-45.256-41.298-57.816c5.994-10.72 10.774-22.206 14.192-34.266l70.088-11.68v-64l-70.086-11.682c-3.418-12.060-8.198-23.544-14.192-34.266zM224 864c-35.348 0-64-28.654-64-64s28.652-64 64-64 64 28.654 64 64-28.652 64-64 64zM1024 384v-64l-67.382-12.25c-1.242-8.046-2.832-15.978-4.724-23.79l57.558-37.1-24.492-59.128-66.944 14.468c-4.214-6.91-8.726-13.62-13.492-20.13l39.006-56.342-45.256-45.254-56.342 39.006c-6.512-4.766-13.22-9.276-20.13-13.494l14.468-66.944-59.128-24.494-37.1 57.558c-7.812-1.892-15.744-3.482-23.79-4.724l-12.252-67.382h-64l-12.252 67.382c-8.046 1.242-15.976 2.832-23.79 4.724l-37.098-57.558-59.128 24.492 14.468 66.944c-6.91 4.216-13.62 8.728-20.13 13.494l-56.342-39.006-45.254 45.254 39.006 56.342c-4.766 6.51-9.278 13.22-13.494 20.13l-66.944-14.468-24.492 59.128 57.558 37.1c-1.892 7.812-3.482 15.742-4.724 23.79l-67.384 12.252v64l67.382 12.25c1.242 8.046 2.832 15.978 4.724 23.79l-57.558 37.1 24.492 59.128 66.944-14.468c4.216 6.91 8.728 13.618 13.494 20.13l-39.006 56.342 45.254 45.256 56.342-39.006c6.51 4.766 13.22 9.276 20.13 13.492l-14.468 66.944 59.128 24.492 37.102-57.558c7.81 1.892 15.742 3.482 23.788 4.724l12.252 67.384h64l12.252-67.382c8.044-1.242 15.976-2.832 23.79-4.724l37.1 57.558 59.128-24.492-14.468-66.944c6.91-4.216 13.62-8.726 20.13-13.492l56.342 39.006 45.256-45.256-39.006-56.342c4.766-6.512 9.276-13.22 13.492-20.13l66.944 14.468 24.492-59.13-57.558-37.1c1.892-7.812 3.482-15.742 4.724-23.79l67.382-12.25zM672 491.2c-76.878 0-139.2-62.322-139.2-139.2s62.32-139.2 139.2-139.2 139.2 62.322 139.2 139.2c0 76.878-62.32 139.2-139.2 139.2z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="home-text11">Factory radio car play</h2>
+            <h3 class="home-text12">
+              <span>Seamless In-Car Connectivity</span>
+              <br class="HeadingTwo" />
+            </h3>
+          </div>
+          <div class="home-container14">
+            <div class="home-container15"></div>
+            <div class="home-container16">
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>What it is:</span>
+                </h5>
+                <span>
+                  <span>
+                    CarPlay seamlessly integrates your iPhone with your car's
+                    infotainment system, allowing you to access navigation,
+                    music, calls, messages, and other apps through your car's
+                    touch screen or voice commands.
+                  </span>
+                </span>
+              </div>
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>Benefits</span>
+                </h5>
+                <span>
+                  <span>
+                    Control iPhone features through voice commands or the
+                    touchscreen, minimizing distractions while driving.
+                  </span>
+                </span>
+              </div>
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>Things to consider</span>
+                </h5>
+                <span>
+                  <span>
+                    Adding CarPlay to non-equipped cars might require
+                    professional installation.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="home-divider"></div>
+          <div class="home-container17">
+            <div class="home-container18">
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>Security vs convenience</span>
+                </h5>
+                <span>
+                  <span>
+                    No matter where you are, Trello stays in sync across all of
+                    your devices.
+                  </span>
+                </span>
+              </div>
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree"><span>Budget</span></h5>
+                <span>
+                  <span>
+                    Factor in installation costs, subscription fees (if
+                    applicable), and potential compatibility upgrades.
+                  </span>
+                </span>
+              </div>
+              <div class="list-item-container">
+                <h5 class="list-item-text HeadingThree">
+                  <span>Integration</span>
+                </h5>
+                <span>
+                  <span>
+                    If you desire both features, explore integrated solutions or
+                    ensure chosen devices don't interfere with each other.
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="home-container19"></div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <img
+            alt="logo"
+            src="https://houstoncarstereo.com/wp-content/uploads/2022/06/cropped-logo.png"
+            class="home-image4"
+          />
+          <span class="home-text15">
+            Copyright © 2022 Houston Car Stereo | All Rights Reserved. Privacy
+            Policy - SEO y Transcolabs
+          </span>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>
